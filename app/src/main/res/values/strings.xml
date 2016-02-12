@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Colegio</string>
+    <string name="Padres">Padre/Madre</string>
+    <string name="Profesores">Profesor</string>
+    <string name="Usuario">Usuario</string>
+    <string name="Registro">Registro</string>
+    <string name="Aceptar">Aceptar</string>
+    <string name="Cancelar">Cancelar</string>
+    <string name="txtvacio">Introduzca usuario</string>
+    <string name="Email">E-mail</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="infoprincipal">Información principal</string>
+    <string name="Chatt">Chatt</string>
+    <string name="Calendario">Calendario</string>
+    <string name="Usuariovacio">Introduzca Usuario y/o Contraseña</string>
+    <string name="Contrasenavacia">Introduza Contraseña</string>
+</resources>
