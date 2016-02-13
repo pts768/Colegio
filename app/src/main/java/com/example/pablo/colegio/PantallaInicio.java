@@ -24,17 +24,20 @@ public class PantallaInicio extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pantalla_principal);
 
-        LayoutInflater inflater = getLayoutInflater();
-        final View alertaNuevoContacto = inflater.inflate(R.layout.login, null);
-        Usuario = (EditText) alertaNuevoContacto.findViewById(R.id.emlEmail); //EditText de activity_agenda
-        Contraseña = (EditText) alertaNuevoContacto.findViewById(R.id.emlContraseña); //EditText de activity_agenga
+
+
+
 
         btProfesor = (Button) findViewById(R.id.btnprofesor);
         btProfesor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(PantallaInicio.this);
-                builder.setMessage(R.string.Registro);
+                //builder.setMessage(R.string.Registro);
+                LayoutInflater inflater = getLayoutInflater();
+                View alertaNuevoContacto = inflater.inflate(R.layout.login, null);
+                Usuario = (EditText) alertaNuevoContacto.findViewById(R.id.emlEmail); //EditText de activity_agenda
+                Contraseña = (EditText) alertaNuevoContacto.findViewById(R.id.emlContraseña); //EditText de activity_agenga
                 builder.setTitle(R.string.Usuario);
                 builder.setPositiveButton(R.string.Aceptar, accionAceptar);
                 builder.setNegativeButton(R.string.Cancelar, accionCancelar);
@@ -47,6 +50,10 @@ public class PantallaInicio extends AppCompatActivity {
         btPadre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                LayoutInflater inflater = getLayoutInflater();
+                View alertaNuevoContacto = inflater.inflate(R.layout.login, null);
+                Usuario = (EditText) alertaNuevoContacto.findViewById(R.id.emlEmail); //EditText de activity_agenda
+                Contraseña = (EditText) alertaNuevoContacto.findViewById(R.id.emlContraseña); //EditText de activity_agenga
                 AlertDialog.Builder builder = new AlertDialog.Builder(PantallaInicio.this);
                 builder.setMessage(R.string.Registro);
                 builder.setTitle(R.string.Usuario);
